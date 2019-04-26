@@ -448,7 +448,7 @@ __keyword__: keyword不会进行分词
             "multi_match【关键词】 （代表多个属性符合一个条件查询）" : {
                 "query【关键词】(查询内容)" : "内容值",
                 "fields【关键词】（需要服务上面query的条件的属性）" : ["属性1","属性2"]，,
-                "type": "best_fields", //对匹配到两个以上的分值*2  most_fields:匹配程度越高分值越高 cross_fields:词条的分词是匹配到不同字段中的，好像没什么用
+                "type": "best_fields", //对匹配到两个以上的分值*2  most_fields:匹配程度越高分值越高 cross_fields:词条的分词是匹配到不同字段中的，好像没什么用  phrase 匹配短语  phrase_prefix 匹配短语前缀
                 "tie_breaker": 2
             }
             
